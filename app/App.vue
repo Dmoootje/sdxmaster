@@ -86,7 +86,7 @@
                                                     </router-link>]
                                                     has been slashed
                                                 </span>
-                                                <div class="notification_body__time">TomoMaster -
+                                                <div class="notification_body__time">SDXMaster -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -104,9 +104,9 @@
                                                     Masternode [<router-link :to="`/candidate/${value.candidate}`">
                                                         <span class="masternode-name">{{ value.name }}</span>
                                                     </router-link>]
-                                                    left the top 150 and is no longer a masternode.
+                                                    left the top 1500 and is no longer a masternode.
                                                 </span>
-                                                <div class="notification__time">TomoMaster -
+                                                <div class="notification__time">SDXMaster -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -123,9 +123,9 @@
                                                     <span class="notification_label proposed">Proposed</span>
                                                     Congratulation for having your own new candidate!
                                                     Its time to gather votes from community by promoting it and
-                                                    be in top 150 to get your first reward.
+                                                    be in top 1500 to get your first reward.
                                                 </span>
-                                                <div class="notification__time">TomoMaster -
+                                                <div class="notification__time">SDXMaster -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -144,7 +144,7 @@
                                                         <span class="masternode-name">{{ value.name }}</span>
                                                     </router-link>] resigned
                                                 </span>
-                                                <div class="notification__time">TomoMaster -
+                                                <div class="notification__time">SDXMaster -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -158,9 +158,9 @@
                                                     'font-weight: bold;'"
                                                     class="notification__content">
                                                     <span class="notification_label withdraw">Withdraw</span>
-                                                    {{ value.amount }} unvoted TOMO are ready to withdraw
+                                                    {{ value.amount }} unvoted SDX are ready to withdraw
                                                 </span>
-                                                <div class="notification__time">TomoMaster -
+                                                <div class="notification__time">SDXMaster -
                                                     {{ value.createdAt }}</div>
                                             </div>
                                         </b-dropdown-text>
@@ -174,14 +174,14 @@
                                     class="notification_body">
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.6.4</strong>
+                                            <strong>SDXMaster up to 1.6.4</strong>
                                             <p>- Support pantograph</p>
                                         </div>
                                     </b-dropdown-text>
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.6.3</strong>
+                                            <strong>SDXMaster up to 1.6.3</strong>
                                             <p>- Remove masternode balance</p>
                                             <p>- Display masternode name in reward table</p>
                                             <p>- Improve loading reward table</p>
@@ -191,14 +191,14 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.6.2</strong>
+                                            <strong>SDXMaster up to 1.6.2</strong>
                                             <p>- Fix test api issue</p>
                                         </div>
                                     </b-dropdown-text>
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.6.1</strong>
+                                            <strong>SDXMaster up to 1.6.1</strong>
                                             <p>- Add check owner address</p>
                                             <p>- Clean unused libraries</p>
                                             <p>- Update webpack</p>
@@ -207,7 +207,7 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.6.0</strong>
+                                            <strong>SDXMaster up to 1.6.0</strong>
                                             <p>- Add Auto tweeting when a new candidate is proposed</p>
                                             <p>- Update searching</p>
                                             <p>- Add top page pagination on small screen</p>
@@ -217,7 +217,7 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.5.2</strong>
+                                            <strong>SDXMaster up to 1.5.2</strong>
                                             <p>- Hide latest signed block for proposed masternode</p>
                                             <p>- Refactor code</p>
                                         </div>
@@ -225,15 +225,15 @@
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.5.1</strong>
-                                            <p>- Hide staking ROI if a masternode out of top 150</p>
+                                            <strong>SDXMaster up to 1.5.1</strong>
+                                            <p>- Hide staking ROI if a masternode out of top 1500</p>
                                             <p>- Fix missing latest reward record</p>
                                         </div>
                                     </b-dropdown-text>
                                     <b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>TomoMaster up to 1.5.0</strong>
+                                            <strong>SDXMaster up to 1.5.0</strong>
                                             <p>- Display average ROI for masternode owner and voter</p>
                                             <p>- Display owner ROI and voter ROI in masternode detail page</p>
                                             <p>- Add withdrawal notification</p>
@@ -246,7 +246,7 @@
                                 <b-dropdown-text
                                     v-if="!isTomonet"
                                     class="notification_bottom">
-                                    TomoMaster - {{ version }}
+                                    SDXMaster - {{ version }}
                                 </b-dropdown-text>
                             </b-dropdown>
                             <b-dropdown
@@ -289,7 +289,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="tomo-footer__copyright">
-                                TomoMaster &copy; {{ (new Date()).getFullYear() }} -
+                                SDXMaster &copy; {{ (new Date()).getFullYear() }} -
                                 <a
                                     :href="`https://github.com/tomochain/tomomaster/releases/tag/v${version}`"
                                     class="version-tag">
@@ -327,37 +327,30 @@
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://t.me/tomochain"
+                                        href="https://t.me/Officialswapdex"
                                         target="_blank">
                                         <i class="tm-telegram" />
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://www.facebook.com/tomochainofficial"
+                                        href="https://www.facebook.com/swapdex"
                                         target="_blank">
                                         <i class="tm-facebook" />
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://twitter.com/TomoChainANN"
+                                        href="https://twitter.com/SwapdexO"
                                         target="_blank">
                                         <i class="tm-twitter" />
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a
-                                        href="https://github.com/tomochain/"
+                                        href="https://github.com/69th-byte"
                                         target="_blank">
                                         <i class="tm-github" />
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a
-                                        href="https://www.reddit.com/r/Tomochain/"
-                                        target="_blank">
-                                        <i class="tm-reddit" />
                                     </a>
                                 </li>
                             </ul>

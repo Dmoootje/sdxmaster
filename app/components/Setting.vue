@@ -402,9 +402,9 @@ export default {
             balance: 0,
             chainConfig: {},
             networks: {
-                // mainnet: 'https://core.tomochain.com',
-                rpc: 'https://testnet.tomochain.com',
-                tomowallet: 'https://testnet.tomochain.com'
+                mainnet: 'https://rpc.swapdex.net',
+                rpc: 'https://rpc.swapdex.net',
+                tomowallet: 'https://rpc.swapdex.net'
             },
             loading: false,
             qrCode: 'text',
@@ -814,7 +814,7 @@ export default {
                     }
                 })
             } else {
-                this.$toasted.show('Not enough TOMO for transaction fee', {
+                this.$toasted.show('Not enough SDX for transaction fee', {
                     type : 'info'
                 })
             }

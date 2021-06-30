@@ -161,7 +161,7 @@ router.post('/generateQR', [
 
         const candidateName = candidateInfo.name ? candidateInfo.name : 'Anonymous'
 
-        const message = voter + ' ' + action + ' ' + amount + ' TOMO for candidate ' + candidate + ' - ' + candidateName
+        const message = voter + ' ' + action + ' ' + amount + ' SDX for candidate ' + candidate + ' - ' + candidateName
         const id = uuidv4()
 
         const signData = {
@@ -265,7 +265,7 @@ router.post('/verifyTx', [
                             const convertedAmount = new BigNumber(amount)
 
                             if (convertedBalanc.isLessThan(convertedAmount)) {
-                                throw Error('Not enough TOMO')
+                                throw Error('Not enough SDX')
                             } else {
                                 throw Error('Something went wrong')
                             }
