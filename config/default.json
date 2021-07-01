@@ -36,9 +36,9 @@
     "sdxscanUrl": "https://dexscan.net",
     "truffle": {
         "mnemonic": "",
-        "minCandidateCap": "50000000000000000000000",
+        "minCandidateCap": "10000000000000000000000",
         "minVoterCap": "10000000000000000000",
-        "maxValidatorNumber": 150,
+        "maxValidatorNumber": 1500,
         "candidateWithdrawDelay": 100,
         "voterWithdrawDelay": 100,
         "epochNumber": 900

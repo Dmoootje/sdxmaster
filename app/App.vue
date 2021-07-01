@@ -291,7 +291,7 @@
                             <div class="tomo-footer__copyright">
                                 SDXMaster &copy; {{ (new Date()).getFullYear() }} -
                                 <a
-                                    :href="`https://github.com/tomochain/tomomaster/releases/tag/v${version}`"
+                                    :href="`https://github.com/69th-byte/sdxmaster/releases/tag/v${version}`"
                                     class="version-tag">
                                     v{{ version }}</a>
                             </div>

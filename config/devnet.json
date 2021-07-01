@@ -1,7 +1,7 @@
 {
     "blockchain": {
-        "rpc": "http://45.32.176.225:1545",
-        "ws": "wss://45.32.176.225:1546",
+        "rpc": "https://rpc.swapdex.net",
+        "ws": "ws://199.192.24.100:1546",
         "internalRpc": "",
         "internalWs": "",
         "networkId": 7879

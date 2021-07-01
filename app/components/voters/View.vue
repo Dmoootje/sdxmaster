@@ -276,7 +276,7 @@ import store from 'store'
 export default {
     name: 'App',
     metaInfo: {
-        title: 'Staker Details | TomoMaster',
+        title: 'Staker Details | SdxMaster',
         meta: [
             { name: 'description', content: 'Staking history, Reward history, Masternode list, Transaction list. You can use mobile, desktop, hardware wallet - ledger nano, trezor to stake TomoChain' } // eslint-disable-line
         ]

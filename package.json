@@ -1,5 +1,5 @@
 {
-    "name": "tomomaster",
+    "name": "sdxmaster",
     "version": "1.6.4",
     "description": "SwapDEX Governance DApp",
     "main": "elect.js",
@@ -27,14 +27,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tomochain/tomomaster.git"
+        "url": "git+https://github.com/69th-byte/sdxmaster.git"
     },
     "author": "",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/tomochain/tomomaster/issues"
+        "url": "https://github.com/69th-byte/sdxmaster/issues"
     },
-    "homepage": "https://github.com/tomochain/tomomaster#readme",
+    "homepage": "https://github.com/69th-byte/sdxmaster#readme",
     "dependencies": {
         "@chenfengyuan/vue-qrcode": "^1.0.0",
         "@ledgerhq/hw-app-eth": "4.24.0",
@@ -130,7 +130,7 @@
         "webpack-merge": "^4.2.1"
     },
     "build": {
-        "appId": "tomomaster",
+        "appId": "sdxmaster",
         "directories": {
             "output": "release-builds"
         },
