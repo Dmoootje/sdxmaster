@@ -188,7 +188,7 @@
                     <b-button
                         v-if="candidate.status !== 'RESIGNED' && isTomonet"
                         :to="`/voting/${candidate.address}`"
-                        variant="primary">Vote</b-button>
+                        variant="primary">Stake</b-button>
                 </div>
             </div>
             <!-- <div
@@ -230,7 +230,7 @@
                             <i class="tm-gift color-purple" />
                             <span>Masternode Rewards</span>
                             <span class="text-truncate section-title__description">
-                                Reward/Status for candidate</span>
+                                Reward/Status for masternode owner</span>
                             <span
                                 v-if="candidate.slashedTimes"
                                 class="text-truncate section-title__description">
@@ -304,9 +304,9 @@
                     <div class="col-12">
                         <h3 class="section-title">
                             <i class="tm-arrow-up color-pink" />
-                            <span>Voters</span>
+                            <span>stakers</span>
                             <span class="text-truncate section-title__description">
-                                People who voted for this candidate</span>
+                                People who stake for this masternode</span>
                         </h3>
                     </div>
                 </div>
@@ -414,11 +414,11 @@
                         slot-scope="data">
                         <a
                             v-b-tooltip.hover.right
-                            :href="`${config.explorerUrl}/txs/${data.item.tx}`"
-                            title="View on TomoScan"
+                            :href="`${config.explorerUrl}/tx/${data.item.tx}`"
+                            title="View on DexScan"
                             target="_blank">
                             <i class="tm-eye" />
-                            <span>View on TomoScan</span>
+                            <span>View on DexScan</span>
                         </a>
                     </template>
                 </b-table>
@@ -447,7 +447,7 @@ export default {
     metaInfo: {
         title: 'Candidate Details | SdxMaster',
         meta: [
-            { name: 'description', content: 'Staking TomoChain Masternode to get the reward every epochs. You can use mobile, desktop, hardware wallet - ledger nano, trezor to stake TomoChain' } // eslint-disable-line
+            { name: 'description', content: 'Staking SDXChain Masternode to get the reward every epochs. You can use mobile, desktop, hardware wallet - ledger nano, trezor to stake TomoChain' } // eslint-disable-line
         ]
     },
     components: {
@@ -538,7 +538,7 @@ export default {
             txFields: [
                 {
                     key: 'voter',
-                    label: 'Voter',
+                    label: 'Staker',
                     sortable: true
                 },
                 {

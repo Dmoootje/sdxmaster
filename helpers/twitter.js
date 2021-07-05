@@ -28,9 +28,9 @@ const TwitterHelper = {
         // amount = new BigNumber(amount)
         // amount = amount.dividedBy(10 ** 18).toNumber()
         const msg = owner.substr(0, 8) + ' has proposed a new candidate ' + candidate.substr(0, 8) +
-            '\nCapacity: ' + amount + ' $SDX' +
-            '\nSdxMaster:  https://master.swapdex.net/candidate/' + candidate +
-            '\nTransaction: https://dexscan.net/txs/' + txHash
+            '\nCapacity: ' + amount + ' $TOMO' +
+            '\nTomoMaster:  https://master.tomochain.com/candidate/' + candidate +
+            '\nTransaction: https://scan.tomochain.com/txs/' + txHash
 
         twitter.post('statuses/update', { status: msg },
             function (error, tweet, response) {

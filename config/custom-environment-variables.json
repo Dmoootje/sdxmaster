@@ -8,8 +8,8 @@
       "ws": "BC_WS",
       "networkId": "BC_NETWORK_ID"
   },
-  "explorerUrl": "SDXSCAN_SITE_URL",
-  "tomoscanUrl": "SDXSCAN_API_URL",
+  "explorerUrl": "TOMOSCAN_SITE_URL",
+  "tomoscanUrl": "TOMOSCAN_API_URL",
   "baseUrl": "BASE_URL",
   "db": {
     "uri": "DB_URI"

@@ -200,8 +200,8 @@ export default {
             txFee: 0,
             gasPrice: null,
             transactionHash: '',
-            toastMessageError: 'An error occurred while voting, please try again',
-            toastMessage: 'You have successfully voted!'
+            toastMessageError: 'An error occurred while staking, please try again',
+            toastMessage: 'You have successfully staked!'
         }
     },
     validations: {

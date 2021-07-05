@@ -16,7 +16,7 @@
                                 <i class="tm-wallet tomo-list__icon" />
                                 <p class="tomo-list__text">
                                     <span>{{ coinbase }}</span>
-                                    <span>Coinbase Address</span>
+                                    <span>SDX Masternode Address</span>
                                 </p>
                             </li>
                             <li class="tomo-list__item">

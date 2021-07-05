@@ -27,14 +27,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/69th-byte/sdxmaster.git"
+        "url": "git+https://github.com/tomochain/tomomaster.git"
     },
     "author": "",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/69th-byte/sdxmaster/issues"
+        "url": "https://github.com/tomochain/tomomaster/issues"
     },
-    "homepage": "https://github.com/69th-byte/sdxmaster#readme",
+    "homepage": "https://github.com/tomochain/tomomaster#readme",
     "dependencies": {
         "@chenfengyuan/vue-qrcode": "^1.0.0",
         "@ledgerhq/hw-app-eth": "4.24.0",

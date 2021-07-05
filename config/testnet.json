@@ -10,6 +10,6 @@
     "tomoscanUrl": "http://tomoscan_server:3333",
     "baseUrl": "https://master.testnet.tomochain.com/",
     "db": {
-        "uri" : "mongodb://sdxmaster_db:27017/governance"
+        "uri" : "mongodb://tomomaster_db:27017/governance"
     }
 }

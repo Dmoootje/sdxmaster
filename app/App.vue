@@ -37,7 +37,7 @@
                                 v-else
                                 id="btn-become-candidate"
                                 to="/apply"
-                                variant="primary">Become a candidate</b-button>
+                                variant="primary">Register a Masternode</b-button>
                             <b-dropdown
                                 class="dd-setting ml-3"
                                 right
@@ -174,11 +174,11 @@
                                     class="notification_body">
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
-                                            <strong>SDXMaster up to 1.6.4</strong>
-                                            <p>- Support pantograph</p>
+                                            <strong>SDXMaster up to 1.0</strong>
+                                            <p>Applying for masternodes and staking is active</p>
                                         </div>
                                     </b-dropdown-text>
-                                    <b-dropdown-divider/>
+                                <!--<b-dropdown-divider/>
                                     <b-dropdown-text>
                                         <div style="font-size: 13px;">
                                             <strong>SDXMaster up to 1.6.3</strong>
@@ -239,14 +239,15 @@
                                             <p>- Add withdrawal notification</p>
                                             <p>- Add sitemap</p>
                                         </div>
-                                    </b-dropdown-text>
+                                    </b-dropdown-text>-->
                                 </div>
                                 <b-dropdown-divider
                                     v-if="!isTomonet" />
                                 <b-dropdown-text
                                     v-if="!isTomonet"
                                     class="notification_bottom">
-                                    SDXMaster - {{ version }}
+                                    <!--SDXMaster - {{ version }}-->
+                                    SDXMaster - V1.0
                                 </b-dropdown-text>
                             </b-dropdown>
                             <b-dropdown
@@ -306,19 +307,14 @@
                                     <li class="list-inline-item">
                                         <a
                                             target="_blank"
-                                            href="https://docs.tomochain.com/legal/privacy">
+                                            href="#">
                                         <i class="tm-lock mr-1"/>Privacy Policy</a>
                                     </li>
                                     <li class="list-inline-item">
                                         <a
                                             target="_blank"
-                                            href="https://docs.tomochain.com/legal/terms-of-use">
+                                            href="#">
                                         <i class="tm-profile mr-1"/>Terms of Use</a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a
-                                            target="_blank"
-                                            href="/api-docs"><i class="tm-checklist mr-1"/>API Documentation</a>
                                     </li>
                                 </ul>
                             </div>
@@ -393,7 +389,7 @@ export default {
             interval: '',
             notifications: [],
             readNoti: 0,
-            needHelpLink: 'https://docs.tomochain.com/faq/products/tomochain-applications/tomomaster'
+            needHelpLink: '#'
         }
     },
     computed: {

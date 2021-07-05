@@ -24,16 +24,16 @@
                                 class="form-control"
                                 @change="onChangeSelect">
                                 <option
-                                    value="tomowallet">TomoWallet (Recommended)</option>
+                                    v-if="!isElectron"
+                                    value="metamask">Metamask/DApp Wallets (Recommended)</option>
+                                <!--<option
+                                    value="tomowallet">TomoWallet (Recommended)</option>-->
                                 <option
                                     value="custom">PrivateKey/MNEMONIC</option>
                                 <option
                                     value="ledger">Ledger Wallet</option>
                                 <option
                                     value="trezor">Trezor Wallet</option>
-                                <option
-                                    v-if="!isElectron"
-                                    value="metamask">Metamask/DApp Wallets</option>
                                 <option
                                     v-if="!isElectron"
                                     value="pantograph">Pantograph</option>
@@ -187,7 +187,7 @@
                             <a
                                 href="https://metamask.io/"
                                 target="_blank">Metamask Extension</a>
-                            then connect it to Tomochain Mainnet or Testnet.</p>
+                            then connect it to the Smart DEX Chain.</p>
                     </div>
                     <div
                         v-if="!isReady && provider === 'pantograph'">
@@ -195,7 +195,7 @@
                             <a
                                 href="https://pantograph.io/"
                                 target="_blank">Pantograph Extension</a>
-                            then connect it to Tomochain Mainnet or Testnet.</p>
+                            then connect it to Tomochain Smart DEX Chain.</p>
                     </div>
                     <div class="buttons text-right">
                         <b-button
@@ -261,10 +261,10 @@
                             <span class="text-muted">{{ getCurrencySymbol() }}</span></p>
                             <span>Capacity</span>
                         </div>
-                        <!-- <b-button
+                        <b-button
                             :disabled="w.blockNumber > chainConfig.blockNumber"
                             variant="primary"
-                            @click="withdraw(w.blockNumber, k)">Withdraw</b-button> -->
+                            @click="withdraw(w.blockNumber, k)">Withdraw</b-button>
                         <div class="tomo-list__text">
                             <b-button
                                 :disabled="w.blockNumber > chainConfig.blockNumber"
